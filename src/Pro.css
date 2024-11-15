@@ -1,0 +1,59 @@
+.product-container {
+  position: relative;
+  width: 1300px;
+  margin: auto;
+}
+
+.main-image-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnail-overlay {
+  position: absolute;
+  cursor: pointer;
+  pointer-events: all;
+  transition: transform 0.2s ease-in-out;
+}
+
+.thumbnail-overlay img {
+  width: 100px; /* Thumbnail size */
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.thumbnail-scroll {
+  display: flex;
+  overflow-x: auto; /* Adds horizontal scrolling if needed */
+  padding-bottom: 10px;
+}
+
+.thumbnails-container {
+  display: flex;
+  justify-content: flex-start; /* Align thumbnails to the left */
+  gap: 10px;
+  overflow-x: auto; /* Scroll horizontally if there are too many thumbnails */
+  padding: 10px 0; /* Padding for spacing around the thumbnails */
+}
+
+.thumbnail img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
