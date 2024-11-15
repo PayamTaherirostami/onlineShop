@@ -60,7 +60,7 @@ useEffect(() => {
 
   // Load CSV Data
   const loadCSV = async () => {
-    const csvUrl = '../../Kids for productList.csv'; // Adjust the path
+    const csvUrl = '../Kids for productList.csv'; // Adjust the path
 
     try {
       const response = await fetch(csvUrl);
